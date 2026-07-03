@@ -1100,3 +1100,31 @@ h3 {
     grid-template-columns: 1fr !important;
   }
 }
+
+/* HARD FIX: Discount card headline overflow */
+
+.discount-card {
+  overflow: hidden !important;
+}
+
+.discount-card h2 {
+  max-width: 100% !important;
+  font-size: clamp(2rem, 4.8vw, 3.05rem) !important;
+  line-height: 0.98 !important;
+  letter-spacing: 0.02em !important;
+  overflow-wrap: anywhere !important;
+  word-break: normal !important;
+}
+
+@media (max-width: 760px) {
+  .discount-card h2 {
+    font-size: clamp(2.15rem, 11vw, 3rem) !important;
+  }
+}
+
+@media (max-width: 430px) {
+  .discount-card h2 {
+    font-size: clamp(2rem, 10vw, 2.65rem) !important;
+    letter-spacing: 0 !important;
+  }
+}
