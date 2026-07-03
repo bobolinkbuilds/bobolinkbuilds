@@ -1,164 +1,336 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2113.2">
-  <style type="text/css">
-    body {background-color: #f0e5cf}
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 32.4px; font: 21.6px 'Hiragino Mincho ProN'; color: #0e0e0e; -webkit-text-stroke: #0e0e0e; background-color: #a37f44}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 26.2px; font: 32.0px Georgia; color: #142e1a; -webkit-text-stroke: #142e1a}
-    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 16.0px; font: 16.0px Georgia; color: #142e1a; -webkit-text-stroke: #142e1a}
-    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 13.5px; font: 9.0px Georgia; color: #201812; -webkit-text-stroke: #201812}
-    p.p5 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 17.1px; font: 11.4px Georgia; color: #18110d; -webkit-text-stroke: #18110d}
-    p.p6 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 13.5px; font: 9.0px Georgia; color: #fff9ec; -webkit-text-stroke: #fff9ec}
-    p.p7 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 18.0px; font: 12.0px Georgia; color: #fff9ec; -webkit-text-stroke: #fff9ec; background-color: #142e1a}
-    p.p8 {margin: 0.0px 0.0px 16.0px 0.0px; line-height: 24.0px; font: 16.0px Georgia; color: #5b3922; -webkit-text-stroke: #5b3922}
-    p.p10 {margin: 0.0px 0.0px 14.4px 0.0px; line-height: 21.6px; font: 14.4px Georgia; color: #18110d; -webkit-text-stroke: #18110d}
-    p.p11 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 18.0px; font: 12.0px Georgia; color: #fff9ec; -webkit-text-stroke: #fff9ec}
-    p.p12 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 18.0px; font: 12.0px Georgia; color: #18110d; -webkit-text-stroke: #18110d; min-height: 14.0px}
-    p.p13 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; line-height: 18.0px; font: 12.0px Georgia; color: #142e1a; -webkit-text-stroke: #142e1a}
-    p.p14 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; line-height: 18.0px; font: 12.0px Georgia; color: #18110d; -webkit-text-stroke: #18110d; background-color: #fff9ec; background-color: rgba(255, 249, 236, 0.9)}
-    p.p15 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; line-height: 33.6px; font: 33.6px Menlo; color: #24442b; -webkit-text-stroke: #24442b}
-    p.p17 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; line-height: 18.0px; font: 12.0px Georgia; color: #18110d; -webkit-text-stroke: #18110d}
-    p.p18 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; line-height: 33.6px; font: 33.6px 'Apple Color Emoji'; color: #24442b; -webkit-text-stroke: #24442b}
-    p.p19 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; line-height: 33.6px; font: 33.6px Symbol; color: #24442b; -webkit-text-stroke: #24442b}
-    p.p20 {margin: 0.0px 0.0px 3.0px 0.0px; line-height: 18.0px; font: 12.0px 'Zapf Dingbats'; color: #5b3922; -webkit-text-stroke: #5b3922}
-    p.p22 {margin: 0.0px 0.0px 12.0px 0.0px; line-height: 18.0px; font: 12.0px Georgia; color: #18110d; -webkit-text-stroke: #18110d}
-    p.p24 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 18.0px; font: 12.0px Georgia; color: #18110d; -webkit-text-stroke: #18110d; background-color: #fff9ec; min-height: 14.0px}
-    p.p25 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; line-height: 18.0px; font: 12.0px Georgia; color: #18110d; -webkit-text-stroke: #18110d; background-color: #fff9ec; min-height: 14.0px}
-    p.p26 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; line-height: 13.5px; font: 9.0px Georgia; color: #18110d; -webkit-text-stroke: #18110d}
-    p.p28 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; line-height: 18.0px; font: 12.0px Georgia; color: #fff9ec; -webkit-text-stroke: #fff9ec; background-color: #142e1a}
-    p.p30 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; line-height: 15.5px; font: 10.3px Georgia; color: #18110d; -webkit-text-stroke: #18110d}
-    p.p31 {margin: 0.0px 0.0px 12.0px 0.0px; text-align: center; line-height: 18.0px; font: 12.0px Georgia; color: #a37f44; -webkit-text-stroke: #a37f44}
-    p.p33 {margin: 0.0px 0.0px 12.0px 0.0px; text-align: center; line-height: 18.0px; font: 12.0px Georgia; color: #fff9ec; -webkit-text-stroke: #fff9ec}
-    p.p35 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; line-height: 16.2px; font: 10.8px Georgia; color: #fff9ec; -webkit-text-stroke: #fff9ec}
-    li.li23 {margin: 0.0px 0.0px 6.6px 0.0px; line-height: 18.0px; font: 12.0px Georgia; color: #18110d; -webkit-text-stroke: #18110d}
-    span.s1 {font-kerning: none}
-    span.s2 {font-kerning: none; background-color: rgba(240, 229, 207, 0.96)}
-    span.s3 {font-kerning: none; background-color: #142e1a}
-    span.s4 {font-kerning: none; background-color: rgba(255, 249, 236, 0.62)}
-    span.s5 {font-kerning: none; color: #18110d; background-color: rgba(255, 249, 236, 0.62); -webkit-text-stroke: 0px #18110d}
-    span.s6 {font-kerning: none; color: #142e1a; background-color: #fff9ec; -webkit-text-stroke: 0px #142e1a}
-    span.s7 {font-kerning: none; background-color: rgba(255, 249, 236, 0.9)}
-    span.s8 {background-color: rgba(255, 249, 236, 0.62); -webkit-text-stroke: 0px #000000}
-    span.s9 {font-kerning: none; background-color: #fff9ec}
-    span.s10 {font-kerning: none; color: #fff9ec; background-color: rgba(255, 249, 236, 0.62); -webkit-text-stroke: 0px #fff9ec}
-    span.s11 {text-decoration: underline ; font-kerning: none; background-color: rgba(255, 249, 236, 0.62)}
-    span.s12 {text-decoration: underline ; font-kerning: none}
-    ul.ul1 {list-style-type: none}
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Bobolink Construction LLC | Custom Catios, Fences & Carpentry in Eugene, Oregon</title>
+  <meta
+    name="description"
+    content="Bobolink Construction LLC builds custom catios, feline enrichment environments, cedar fences, gates, fence repair, deck repair, and residential carpentry in Eugene, Oregon. Licensed, bonded, and insured. CCB #262326."
+  />
+
+  <meta property="og:title" content="Bobolink Construction LLC" />
+  <meta
+    property="og:description"
+    content="Custom catios, feline enrichment environments, fences, gates, repairs, and residential carpentry in Eugene, Oregon."
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="images/hero-catio.jpg" />
+
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-<p class="p1"><span class="s1">◒</span></p>
-<p class="p2"><span class="s2"><b>Bobolink</b></span></p>
-<p class="p3"><span class="s2">CONSTRUCTION LLC</span></p>
-<p class="p4"><span class="s2">CUSTOM CATIOS &amp; FELINE ENRICHMENT ENVIRONMENTS</span></p>
-<p class="p5"><span class="s2"><b>CATIOS</b></span></p>
-<p class="p5"><span class="s2"><b>SERVICES</b></span></p>
-<p class="p5"><span class="s2"><b>PROCESS</b></span></p>
-<p class="p5"><span class="s2"><b>ABOUT</b></span></p>
-<p class="p5"><span class="s2"><b>CONTACT</b></span></p>
-<p class="p6"><span class="s3"><a href="tel:5413576791"><b>PHONE</b><span class="s1"><b></b></span></a></span></p>
-<p class="p7"><span class="s1"><a href="tel:5413576791"><b>(541) 357-6791</b></a></span></p>
-<p class="p8"><span class="s4"><b>CUSTOM CATIOS &amp; FELINE ENRICHMENT ENVIRONMENTS</b></span></p>
-<h1 style="margin: 0.0px 0.0px 15.0px 0.0px; line-height: 56.3px; font: 64.0px Georgia; color: #142e1a; -webkit-text-stroke: #142e1a"><span class="s4"><b>BRING NATURE INTO THEIR WORLD</b></span></h1>
-<p class="p10"><span class="s4">Beautiful, secure outdoor spaces designed to give indoor cats fresh air, sunshine, climbing, exploration, and the stimulation they naturally crave.<span class="Apple-converted-space"> </span></span></p>
-<p class="p11"><span class="s3"><b>SCHEDULE A FREE CONSULTATION</b></span><span class="s5"> <a href="tel:5413576791"><span class="s6"><b>(541) 357-6791</b></span></a><span class="Apple-converted-space"> </span></span></p>
-<p class="p12"><span class="s1"></span><br></p>
-<p class="p13"><span class="s7"><b>CATIO NO. 427</b></span></p>
-<p class="p14"><span class="s1">Built for comfort, curiosity &amp; adventure every day.<span class="Apple-converted-space"> </span></span></p>
-<p class="p15"><span class="s4">☘</span></p>
-<h2 style="margin: 0.0px 0.0px 4.2px 0.0px; text-align: center; line-height: 13.1px; font: 13.8px Georgia; color: #142e1a; -webkit-text-stroke: #142e1a"><span class="s4"><b>CAT SAFE</b></span></h2>
-<p class="p17"><span class="s4">Secure, escape-resistant design.</span></p>
-<p class="p18"><span class="s4">☔</span></p>
-<h2 style="margin: 0.0px 0.0px 4.2px 0.0px; text-align: center; line-height: 13.1px; font: 13.8px Georgia; color: #142e1a; -webkit-text-stroke: #142e1a"><span class="s4"><b>WEATHER RESISTANT</b></span></h2>
-<p class="p17"><span class="s4">Built for Oregon conditions.</span></p>
-<p class="p19"><span class="s4">♣</span></p>
-<h2 style="margin: 0.0px 0.0px 4.2px 0.0px; text-align: center; line-height: 13.1px; font: 13.8px Georgia; color: #142e1a; -webkit-text-stroke: #142e1a"><span class="s4"><b>BEAUTIFUL BY DESIGN</b></span></h2>
-<p class="p17"><span class="s4">Made to complement your home.</span></p>
-<p class="p15"><span class="s4">♜</span></p>
-<h2 style="margin: 0.0px 0.0px 4.2px 0.0px; text-align: center; line-height: 13.1px; font: 13.8px Georgia; color: #142e1a; -webkit-text-stroke: #142e1a"><span class="s4"><b>LICENSED &amp; INSURED</b></span></h2>
-<p class="p17"><span class="s4">Bonded for your peace of mind.</span></p>
-<p class="p15"><span class="s4">⚒</span></p>
-<h2 style="margin: 0.0px 0.0px 4.2px 0.0px; text-align: center; line-height: 13.1px; font: 13.8px Georgia; color: #142e1a; -webkit-text-stroke: #142e1a"><span class="s4"><b>CCB #262326</b></span></h2>
-<p class="p17"><span class="s4">Licensed • Bonded • Insured</span></p>
-<p class="p20"><span class="s4">✦</span></p>
-<h2 style="margin: 0.0px 0.0px 12.0px 0.0px; line-height: 30.4px; font: 32.0px Georgia; color: #142e1a; -webkit-text-stroke: #142e1a"><span class="s4"><b>MORE THAN JUST A CATIO</b></span></h2>
-<p class="p22"><span class="s4">Every build is custom designed to enrich your cat’s natural instincts and complement your home.<span class="Apple-converted-space"> </span></span></p>
-<ul class="ul1">
-  <li class="li23"><span class="s8"></span><span class="s4">Climbing shelves &amp; perches</span></li>
-  <li class="li23"><span class="s8"></span><span class="s4">Bridges, tunnels &amp; hammocks</span></li>
-  <li class="li23"><span class="s8"></span><span class="s4">Scratch posts &amp; vertical spaces</span></li>
-  <li class="li23"><span class="s8"></span><span class="s4">Weather shelters &amp; cozy hideaways</span></li>
-  <li class="li23"><span class="s8"></span><span class="s4">Feeding stations &amp; water access</span></li>
-  <li class="li23"><span class="s8"></span><span class="s4">Secure fencing &amp; cat doors</span></li>
-  <li class="li23"><span class="s8"></span><span class="s4">Window catios to full outdoor enclosures</span></li>
-</ul>
-<p class="p11"><span class="s3"><b>START YOUR PROJECT</b></span><span class="s5"><span class="Apple-converted-space"> </span></span></p>
-<p class="p24"><span class="s1"></span><br></p>
-<p class="p24"><span class="s1"></span><br></p>
-<p class="p24"><span class="s1"></span><br></p>
-<p class="p24"><span class="s1"></span><br></p>
-<p class="p24"><span class="s1"></span><br></p>
-<p class="p24"><span class="s1"></span><br></p>
-<p class="p20"><span class="s4">✦</span></p>
-<h2 style="margin: 0.0px 0.0px 12.0px 0.0px; line-height: 30.4px; font: 32.0px Georgia; color: #142e1a; -webkit-text-stroke: #142e1a"><span class="s4"><b>ALSO BUILDING</b></span></h2>
-<p class="p22"><span class="s4">Quality craftsmanship for your entire property. From fences to fine details, we build it right.<span class="Apple-converted-space"> </span></span></p>
-<p class="p25"><span class="s1"></span><br></p>
-<p class="p26"><span class="s4"><b>No. 101</b></span></p>
-<h3 style="margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; line-height: 13.2px; font: 12.0px Georgia; color: #142e1a; -webkit-text-stroke: #142e1a"><span class="s4"><b>CEDAR FENCES</b></span></h3>
-<p class="p25"><span class="s1"></span><br></p>
-<p class="p26"><span class="s4"><b>No. 102</b></span></p>
-<h3 style="margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; line-height: 13.2px; font: 12.0px Georgia; color: #142e1a; -webkit-text-stroke: #142e1a"><span class="s4"><b>GATES</b></span></h3>
-<p class="p25"><span class="s1"></span><br></p>
-<p class="p26"><span class="s4"><b>No. 103</b></span></p>
-<h3 style="margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; line-height: 13.2px; font: 12.0px Georgia; color: #142e1a; -webkit-text-stroke: #142e1a"><span class="s4"><b>FENCE REPAIR</b></span></h3>
-<p class="p25"><span class="s1"></span><br></p>
-<p class="p26"><span class="s4"><b>No. 104</b></span></p>
-<h3 style="margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; line-height: 13.2px; font: 12.0px Georgia; color: #142e1a; -webkit-text-stroke: #142e1a"><span class="s4"><b>DECK REPAIR</b></span></h3>
-<p class="p25"><span class="s1"></span><br></p>
-<p class="p26"><span class="s4"><b>No. 105</b></span></p>
-<h3 style="margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; line-height: 13.2px; font: 12.0px Georgia; color: #142e1a; -webkit-text-stroke: #142e1a"><span class="s4"><b>RESIDENTIAL CARPENTRY</b></span></h3>
-<p class="p20"><span class="s4">✦</span></p>
-<h2 style="margin: 0.0px 0.0px 12.0px 0.0px; line-height: 30.4px; font: 32.0px Georgia; color: #142e1a; -webkit-text-stroke: #142e1a"><span class="s4"><b>OUR SIMPLE PROCESS</b></span></h2>
-<p class="p28"><span class="s1"><b>1</b></span></p>
-<h3 style="margin: 0.0px 0.0px 4.2px 0.0px; text-align: center; line-height: 11.6px; font: 10.6px Georgia; color: #142e1a; -webkit-text-stroke: #142e1a"><span class="s4"><b>FREE CONSULTATION</b></span></h3>
-<p class="p30"><span class="s4">Tell us about your vision and your cats.</span></p>
-<p class="p28"><span class="s1"><b>2</b></span></p>
-<h3 style="margin: 0.0px 0.0px 4.2px 0.0px; text-align: center; line-height: 11.6px; font: 10.6px Georgia; color: #142e1a; -webkit-text-stroke: #142e1a"><span class="s4"><b>SITE VISIT</b></span></h3>
-<p class="p30"><span class="s4">We evaluate your space and discuss options.</span></p>
-<p class="p28"><span class="s1"><b>3</b></span></p>
-<h3 style="margin: 0.0px 0.0px 4.2px 0.0px; text-align: center; line-height: 11.6px; font: 10.6px Georgia; color: #142e1a; -webkit-text-stroke: #142e1a"><span class="s4"><b>DESIGN IDEAS</b></span></h3>
-<p class="p30"><span class="s4">Custom solutions tailored to your home and cats.</span></p>
-<p class="p28"><span class="s1"><b>4</b></span></p>
-<h3 style="margin: 0.0px 0.0px 4.2px 0.0px; text-align: center; line-height: 11.6px; font: 10.6px Georgia; color: #142e1a; -webkit-text-stroke: #142e1a"><span class="s4"><b>ESTIMATE</b></span></h3>
-<p class="p30"><span class="s4">Clear, detailed pricing with no pressure.</span></p>
-<p class="p28"><span class="s1"><b>5</b></span></p>
-<h3 style="margin: 0.0px 0.0px 4.2px 0.0px; text-align: center; line-height: 11.6px; font: 10.6px Georgia; color: #142e1a; -webkit-text-stroke: #142e1a"><span class="s4"><b>CONSTRUCTION</b></span></h3>
-<p class="p30"><span class="s4">Skilled craftsmanship with attention to every detail.</span></p>
-<p class="p28"><span class="s1"><b>6</b></span></p>
-<h3 style="margin: 0.0px 0.0px 4.2px 0.0px; text-align: center; line-height: 11.6px; font: 10.6px Georgia; color: #142e1a; -webkit-text-stroke: #142e1a"><span class="s4"><b>HAPPY CATS</b></span></h3>
-<p class="p30"><span class="s4">A safe, enriching space your cats will love.</span></p>
-<p class="p31"><span class="s4"><b>HELP US INSPIRE MORE CATS</b></span></p>
-<h2 style="margin: 0.0px 0.0px 12.0px 0.0px; text-align: center; line-height: 38.0px; font: 40.0px Georgia; color: #a37f44; -webkit-text-stroke: #a37f44"><span class="s4"><b>$500</b></span><span class="s1"><b><br>
-</b></span><span class="s4"><b>PHOTO DISCOUNT</b></span></h2>
-<p class="p33"><span class="s4">Receive a $500 discount on qualifying projects when you allow us to professionally photograph the finished catio for our portfolio and marketing.<span class="Apple-converted-space"> </span></span></p>
-<p class="p13"><span class="s9"><b>LEARN MORE</b></span><span class="s10"><span class="Apple-converted-space"> </span></span></p>
-<h2 style="margin: 0.0px 0.0px 8.4px 0.0px; line-height: 13.1px; font: 13.8px Georgia; color: #142e1a; -webkit-text-stroke: #142e1a"><span class="s4"><b>ABOUT BOBOLINK</b></span></h2>
-<p class="p22"><span class="s4">Locally owned and operated in Eugene, Oregon. We combine a love of cats with quality craftsmanship to build beautiful, safe, and enriching environments that bring nature into their world.<span class="Apple-converted-space"> </span></span></p>
-<h2 style="margin: 0.0px 0.0px 8.4px 0.0px; line-height: 13.1px; font: 13.8px Georgia; color: #142e1a; -webkit-text-stroke: #142e1a"><span class="s4"><b>SERVICE AREA</b></span></h2>
-<p class="p22"><span class="s4">Eugene • Springfield • Junction City • Creswell • Veneta • Cottage Grove and surrounding areas.<span class="Apple-converted-space"> </span></span></p>
-<h2 style="margin: 0.0px 0.0px 8.4px 0.0px; line-height: 13.1px; font: 13.8px Georgia; color: #142e1a; -webkit-text-stroke: #142e1a"><span class="s4"><b>CONTACT</b></span></h2>
-<p class="p22"><span class="s11"><a href="tel:5413576791">(541) 357-6791<span class="s12"></span></a></span></p>
-<p class="p22"><span class="s11"><a href="mailto:hello@bobolinkbuilds.com">hello@bobolinkbuilds.com<span class="s12"></span></a></span></p>
-<p class="p22"><span class="s4">277 W. 8th Ave</span><span class="s1"><br>
-</span><span class="s4">Eugene, OR 97401</span></p>
-<p class="p22"><span class="s4">CCB #262326</span><span class="s1"><br>
-</span><span class="s4">Licensed • Bonded • Insured</span></p>
-<p class="p24"><span class="s1"></span><br></p>
-<p class="p35"><span class="s3">© 2026 Bobolink Construction LLC. All rights reserved.</span></p>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <div class="page">
+    <header class="site-header" id="top">
+      <a class="brand" href="#top" aria-label="Bobolink Construction LLC home">
+        <img
+          class="brand-mark"
+          src="images/icon-bobolink.jpg"
+          alt=""
+          aria-hidden="true"
+        />
+
+        <span class="brand-copy">
+          <strong>Bobolink</strong>
+          <span>Construction LLC</span>
+          <em>Custom Catios & Feline Enrichment Environments</em>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-controls="site-nav" aria-expanded="false">
+        Menu
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+        <a href="#catios">Catios</a>
+        <a href="#services">Services</a>
+        <a href="#process">Process</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <a class="phone-plate" href="tel:5413576791">
+        <span>Phone</span>
+        (541) 357-6791
+      </a>
+    </header>
+
+    <main id="main">
+      <section class="hero catalog-rule">
+        <div class="hero-copy">
+          <p class="section-label">Custom Catios & Feline Enrichment Environments</p>
+
+          <h1>Bring Nature Into Their World</h1>
+
+          <p class="hero-lede">
+            Beautiful, secure outdoor spaces designed to give indoor cats fresh air,
+            sunshine, climbing, exploration, and the stimulation they naturally crave.
+          </p>
+
+          <div class="button-row">
+            <a class="button button-primary" href="#contact">Schedule a Free Consultation</a>
+            <a class="button button-secondary" href="tel:5413576791">(541) 357-6791</a>
+          </div>
+        </div>
+
+        <figure class="hero-media">
+          <img
+            src="images/hero-catio.jpg"
+            alt="A cat sitting on a wooden shelf inside a custom catio with plants and wire mesh"
+            loading="eager"
+          />
+
+          <figcaption class="catalog-tag">
+            <strong>Catio No. 427</strong>
+            <span>Built for comfort, curiosity & adventure every day.</span>
+          </figcaption>
+        </figure>
+      </section>
+
+      <section class="proof catalog-rule" aria-label="Bobolink Construction highlights">
+        <article class="proof-item">
+          <img src="images/icon-leaf.jpg" alt="" aria-hidden="true" />
+          <h2>Cat Safe</h2>
+          <p>Secure, escape-resistant design.</p>
+        </article>
+
+        <article class="proof-item">
+          <img src="images/icon-weather.jpg" alt="" aria-hidden="true" />
+          <h2>Weather Resistant</h2>
+          <p>Built for Oregon conditions.</p>
+        </article>
+
+        <article class="proof-item">
+          <img src="images/icon-tree.jpg" alt="" aria-hidden="true" />
+          <h2>Beautiful by Design</h2>
+          <p>Made to complement your home.</p>
+        </article>
+
+        <article class="proof-item">
+          <img src="images/icon-shield.jpg" alt="" aria-hidden="true" />
+          <h2>Licensed & Insured</h2>
+          <p>Bonded for your peace of mind.</p>
+        </article>
+
+        <article class="proof-item">
+          <img src="images/icon-tools.jpg" alt="" aria-hidden="true" />
+          <h2>CCB #262326</h2>
+          <p>Licensed • Bonded • Insured</p>
+        </article>
+      </section>
+
+      <section class="catio-section catalog-rule" id="catios">
+        <div class="section-copy">
+          <p class="ornament" aria-hidden="true">✦</p>
+          <p class="section-label">Outdoor Feline Conservatories</p>
+
+          <h2>More Than Just a Catio</h2>
+
+          <p>
+            Every build is custom designed to enrich your cat’s natural instincts
+            and complement your home. From a small window catio to a walk-in garden
+            enclosure, the goal is the same: safer outdoor access and a more stimulating
+            daily life.
+          </p>
+
+          <ul class="feature-list">
+            <li>Climbing shelves & perches</li>
+            <li>Bridges, tunnels & hammocks</li>
+            <li>Scratch posts & vertical spaces</li>
+            <li>Weather shelters & cozy hideaways</li>
+            <li>Feeding stations & water access</li>
+            <li>Secure fencing & cat doors</li>
+            <li>Window catios to full outdoor enclosures</li>
+          </ul>
+
+          <a class="button button-primary" href="#contact">Start Your Project</a>
+        </div>
+
+        <div class="catio-gallery" aria-label="Catio project image gallery">
+          <figure class="gallery-card gallery-card-large">
+            <img
+              src="images/catio-1.jpg"
+              alt="Cedar catio attached to the side of a house with plants inside"
+              loading="lazy"
+            />
+            <figcaption>No. 427 — Garden Catio</figcaption>
+          </figure>
+
+          <figure class="gallery-card">
+            <img
+              src="images/catio-2.jpg"
+              alt="Cat sitting on a wooden shelf inside a catio"
+              loading="lazy"
+            />
+            <figcaption>Perch Detail</figcaption>
+          </figure>
+
+          <figure class="gallery-card">
+            <img
+              src="images/catio-3.jpg"
+              alt="Long enclosed catio walkway with wood shelves and wire mesh"
+              loading="lazy"
+            />
+            <figcaption>Run & Walkway</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="services catalog-rule" id="services">
+        <div class="services-intro">
+          <p class="ornament" aria-hidden="true">✦</p>
+          <p class="section-label">Also Building</p>
+
+          <h2>Quality Craftsmanship for Your Entire Property</h2>
+
+          <p>
+            In addition to custom catios, Bobolink Construction LLC offers practical,
+            detail-focused carpentry and fencing services for homeowners in Eugene
+            and the surrounding area.
+          </p>
+        </div>
+
+        <div class="service-grid" aria-label="Construction services">
+          <article class="service-card">
+            <img src="images/fence.jpg" alt="New cedar fence along a garden path" loading="lazy" />
+            <p>No. 101</p>
+            <h3>Cedar Fences</h3>
+          </article>
+
+          <article class="service-card">
+            <img src="images/gate.jpg" alt="Custom wooden gate with black hardware" loading="lazy" />
+            <p>No. 102</p>
+            <h3>Gates</h3>
+          </article>
+
+          <article class="service-card">
+            <img src="images/repair.jpg" alt="Drill repairing a wooden fence rail" loading="lazy" />
+            <p>No. 103</p>
+            <h3>Fence Repair</h3>
+          </article>
+
+          <article class="service-card">
+            <img src="images/deck.jpg" alt="Wood deck with railing and potted plants" loading="lazy" />
+            <p>No. 104</p>
+            <h3>Deck Repair</h3>
+          </article>
+
+          <article class="service-card">
+            <img src="images/carpentry.jpg" alt="Carpentry tools arranged on a wooden workbench" loading="lazy" />
+            <p>No. 105</p>
+            <h3>Residential Carpentry</h3>
+          </article>
+        </div>
+      </section>
+
+      <section class="process-discount catalog-rule" id="process">
+        <div class="process">
+          <p class="ornament" aria-hidden="true">✦</p>
+          <p class="section-label">Our Simple Process</p>
+
+          <h2>From First Idea to Happy Cats</h2>
+
+          <div class="process-grid">
+            <article>
+              <strong>1</strong>
+              <h3>Free Consultation</h3>
+              <p>Tell us about your cats, your space, and what you want to build.</p>
+            </article>
+
+            <article>
+              <strong>2</strong>
+              <h3>Site Visit</h3>
+              <p>We evaluate your space and talk through practical options.</p>
+            </article>
+
+            <article>
+              <strong>3</strong>
+              <h3>Design Ideas</h3>
+              <p>Custom solutions tailored to your home, yard, and cats.</p>
+            </article>
+
+            <article>
+              <strong>4</strong>
+              <h3>Estimate</h3>
+              <p>Clear, detailed pricing with no pressure.</p>
+            </article>
+
+            <article>
+              <strong>5</strong>
+              <h3>Construction</h3>
+              <p>Skilled craftsmanship with attention to every detail.</p>
+            </article>
+
+            <article>
+              <strong>6</strong>
+              <h3>Happy Cats</h3>
+              <p>A safe, enriching space your cats will love.</p>
+            </article>
+          </div>
+        </div>
+
+        <aside class="discount-card" aria-label="Five hundred dollar photo discount">
+          <p class="section-label">Help Us Inspire More Cats</p>
+          <h2>$500 Photo Discount</h2>
+
+          <p>
+            Receive a $500 discount on qualifying projects when you allow us to
+            professionally photograph the finished catio for our portfolio and marketing.
+          </p>
+
+          <a class="button button-inverse" href="#contact">Ask About the Discount</a>
+        </aside>
+      </section>
+
+      <section class="about-contact catalog-rule" id="about">
+        <article class="about-block">
+          <p class="ornament" aria-hidden="true">✦</p>
+          <h2>About Bobolink</h2>
+
+          <p>
+            Bobolink Construction LLC is locally owned and operated in Eugene, Oregon.
+            We combine a love of cats with quality craftsmanship to build beautiful,
+            safe, enriching environments that bring nature into their world.
+          </p>
+        </article>
+
+        <article class="service-area-block">
+          <p class="ornament" aria-hidden="true">✦</p>
+          <h2>Service Area</h2>
+
+          <p>
+            Eugene • Springfield • Junction City • Creswell • Veneta • Cottage Grove
+            and surrounding areas.
+          </p>
+        </article>
+
+        <article class="contact-block" id="contact">
+          <p class="ornament" aria-hidden="true">✦</p>
+          <h2>Contact</h2>
+
+          <address>
+            <p><a href="tel:5413576791">(541) 357-6791</a></p>
+            <p><a href="mailto:hello@bobolinkbuilds.com">hello@bobolinkbuilds.com</a></p>
+            <p>277 W. 8th Ave<br />Eugene, OR 97401</p>
+            <p>CCB #262326<br />Licensed • Bonded • Insured</p>
+          </address>
+        </article>
+
+        <figure class="footer-image">
+          <img src="images/catio-2.jpg" alt="Cat sitting on a wooden shelf in a catio" loading="lazy" />
+        </figure>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2026 Bobolink Construction LLC. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
